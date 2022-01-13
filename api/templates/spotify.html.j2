@@ -77,6 +77,14 @@
                     animation: sound 0ms -800ms linear infinite alternate;
                 }
                 
+                .center {
+                  width: 100%;
+                  display: flex;
+                  margin: auto;
+                  justify-content: center;
+                  align-items: center;
+                }
+                
                 .spotify-logo {
                     position: fixed;
                     right: 20px;
@@ -111,9 +119,9 @@
 
             <div class="main">
                 <a class="art" href="{}" target="_blank">
-                    <center>
-                        <img src="data:image/png;base64, {{image}}" class="cover" style="max-width: 100%;display: flex;margin: auto;"/>
-                    </center>
+                    <div class="center">
+                        <img src="data:image/png;base64, {{image}}" class="cover" />
+                    </div>
                 </a>
 
                 <div class="content">
